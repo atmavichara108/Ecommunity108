@@ -3,12 +3,18 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s;
 }
 
 header .logo img {
@@ -32,13 +38,21 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
 }
 
 .hero {
     background: url('hero.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+    transition: transform 1s;
 }
 
 .hero h1 {
@@ -58,10 +72,16 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.hero .btn:hover {
+    background: #cc5200;
+    transform: scale(1.1);
 }
 
 section {
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -70,13 +90,51 @@ section h2 {
     margin-bottom: 10px;
 }
 
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
     margin: 0;
+}
+
+form input, form textarea {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+form button {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #cc5200;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.hero {
+    animation: float 4s infinite ease-in-out;
 }
