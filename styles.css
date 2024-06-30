@@ -95,6 +95,23 @@ section p {
     margin: 0 auto;
 }
 
+.structure-diagram {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.structure-diagram img {
+    width: 100%;
+    max-width: 600px;
+    animation: float 4s infinite ease-in-out;
+}
+
+ul {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
 footer {
     background: #333;
     color: #fff;
