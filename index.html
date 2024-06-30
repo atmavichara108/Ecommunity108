@@ -3,46 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamster Clicker</title>
-    <style>
-        body {
-            background-color: #141221;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            font-family: 'PatsySans', sans-serif;
-        }
-        .score {
-            font-size: 100px;
-        }
-        .progress-bar {
-            width: 80%;
-            height: 20px;
-            background-color: #bf6524;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .progress {
-            height: 100%;
-            width: 0;
-            background-color: #ff8b1f;
-            border-radius: 10px;
-        }
-        img {
-            width: 200px;
-            transition: transform 0.1s;
-        }
-    </style>
+    <title>Ecommunity108</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="score">0</div>
-    <img src="hamster.png" alt="Hamster" id="hamster">
-    <div class="progress-bar">
-        <div class="progress" id="progress"></div>
-    </div>
-    <script src="app.js"></script>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Ecommunity108 Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#join">Участие</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Создаём будущее вместе</h1>
+        <p>Добро пожаловать в Ecommunity108! Присоединяйтесь к нам в пути к устойчивому и гармоничному будущему.</p>
+        <a href="#join" class="btn">Присоединиться</a>
+    </section>
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы - сообщество единомышленников, стремящихся к устойчивому развитию и гармоничной жизни...</p>
+    </section>
+    <section id="projects">
+        <h2>Проекты</h2>
+        <p>Узнайте о наших текущих и планируемых проектах...</p>
+    </section>
+    <section id="join">
+        <h2>Участие</h2>
+        <p>Присоединяйтесь к нашему сообществу и помогайте строить лучшее будущее...</p>
+    </section>
+    <section id="news">
+        <h2>Новости</h2>
+        <p>Читайте последние новости и обновления...</p>
+    </section>
+    <section id="blog">
+        <h2>Блог</h2>
+        <p>Полезные статьи и руководства...</p>
+    </section>
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами...</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ecommunity108. Все права защищены.</p>
+    </footer>
 </body>
 </html>
